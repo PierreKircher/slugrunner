@@ -4,6 +4,7 @@ MAINTAINER Jonathan Rudenberg <jonathan@titanous.com>
 ADD ./runner /runner
 ENTRYPOINT ["/runner/init"]
 
+WORKDIR /app
 # add default port to expose (can be overridden)
 ENV PORT 5000
 EXPOSE 5000
